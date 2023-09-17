@@ -7,6 +7,8 @@
     <title>Book Drop</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/233bdb129b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -24,6 +26,18 @@
                 <li class=" nav-item mr-2">
                     <a href="/about" class="nav-link ">About</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Genres
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Horror</a>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <a class="dropdown-item" href="#">Non-fiction</a>
+                        <a class="dropdown-item" href="#">Science Fiction</a>
+                    </div>
+                </li>
                 <li class=" nav-item mr-2 d-block d-md-none">
                     <a class="nav-link" href="/login">Sign In / Sign-Up!</a>
                 </li>
@@ -38,23 +52,23 @@
         </div>
 
     </nav>
-    <article class="container mt-3">
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong>
-                    Get a 12-month subscription for the price of 6-months! <a href=""> Click here
-                        for details</a>
-                </div>
+    <!-- <div class="row">
+        <div class="col-12">
+            <div class="alert alert-warning">
+                <strong>Sale Now On!</strong>
+                Get a 12-month subscription for the price of 6-months! <a href=""> Click here
+                    for details</a>
             </div>
         </div>
-    </article>
-    <article class="container mt-3">
-        <section class="callout jumbotron text-center">
-            <div class="row">
-                <div class="col-12">
-                    <h1>The best books to your doorstep</h1>
+    </div> -->
+    <div class=" container-fluid callout-container">
+        <div class="opaque-overlay"></div>
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron jumbotron-header text-center">
 
+                    <h1>The best books to your doorstep</h1>
+                    <hr class="block-divider">
                     <p class="lead">Sign up today to start recieving the best books every month.
                         <br><s class="d-none d-md-inline ">$19.99</s>
                         <strong>
@@ -64,91 +78,93 @@
                     <p class="text-muted">
                         <small>Terms and conditions apply</small>
                     </p>
-                    <button class="btn btn-success btn-large" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
-                </div>
+                    <button class="btn btn-cta btn-gold btn-large" data-toggle="modal" data-target="#signUpModal">Sign
+                        up!</button>
+                </section>
             </div>
-        </section>
-        <hr>
-        <section class="quotes">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-uppercas">Quotes:</h2>
-                </div>
+        </div>
+    </div>
+    
+    <hr>
+    <section class="quotes">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-uppercas">Quotes:</h2>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="./assets/images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="blockquote">
-                                <p>I've been introduced to so many amazing books!</p>
-                                <p> - Jane Doe</p>
-                            </blockquote>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="./assets/images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
                     </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="./assets/images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="blockquote">
-                                <p>I've read 100+ books this year!</p>
-                                <p> - James Doe</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-        <hr>
-        <section class="features">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-uppercase">Features:</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3>
-                            <div class="d-none d-sm-inline"> <i class="fa-solid fa-gift"></i> </div>
-                            Feature 1
-                            <span class="badge badge-success">New! </span>
-                        </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatum.</p>
-                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3>
-                            <div class="d-none d-sm-inline"> <i class="fa-solid fa-book"></i> </div>Feature 2
-                        </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatum.</p>
-                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-
-                    </div>
-                </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="feature">
-                        <h3>
-                            <div class="d-none d-sm-inline"> <i class="fa-solid fa-truck-fast"></i> </div>Feature 2
-                        </h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, sapiente.</p>
-                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    <div class="media-body">
+                        <blockquote class="blockquote">
+                            <p>I've been introduced to so many amazing books!</p>
+                            <p> - Jane Doe</p>
+                        </blockquote>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-12 col-md-6">
+                <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="./assets/images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                    </div>
+                    <div class="media-body">
+                        <blockquote class="blockquote">
+                            <p>I've read 100+ books this year!</p>
+                            <p> - James Doe</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
 
-    </article>
+
+        </div>
+    </section>
+    <hr>
+    <section class="features">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-uppercase">Features:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <h3>
+                        <div class="d-none d-sm-inline"> <i class="fa-solid fa-gift"></i> </div>
+                        Feature 1
+                        <span class="badge badge-success">New! </span>
+                    </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatum.</p>
+                    <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <h3>
+                        <div class="d-none d-sm-inline"> <i class="fa-solid fa-book"></i> </div>Feature 2
+                    </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatum.</p>
+                    <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+
+                </div>
+            </div>
+            <div class="col-12 d-md-none d-lg-block col-lg-4">
+                <div class="feature">
+                    <h3>
+                        <div class="d-none d-sm-inline"> <i class="fa-solid fa-truck-fast"></i> </div>Feature 2
+                    </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, sapiente.</p>
+                    <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -177,7 +193,7 @@
                     <button type="submit" class="btn btn-success">Submit</button>
                     </form>
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -1,0 +1,82 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.callout-container {
+  height: 100vh;
+
+  background: url(../images/book-background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.block-divider {
+  width: 75px;
+  height: 5px;
+  border: 0;
+  background-color: rgba(232, 183, 58);
+  margin-bottom: 10px;
+}
+
+.jumbotron {
+  background-color: rgb(233, 236, 239, 0.0);
+}
+
+.jumbotron h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.jumbotron p {
+  color: white;
+}
+
+.jumbotron-header small {
+  font-style: italic;
+  color: rgb(199, 195, 195);
+}
+
+.jumbotron .lead {
+  margin: 25px 0;
+}
+
+.btn-cta {
+  font-weight: bold;
+  border-radius: 23px;
+  width: 160px;
+}
+
+.btn-gold {
+  color: white;
+ 
+  background-color: rgb(232, 183, 58);
+  border-color: rgb(232, 183, 58);
+}
+
+.btn-gold:hover,
+.btn-gold:active,
+.btn-gold:focus,
+.btn-gold:active:focus {
+    background-color:rgb(205, 162, 51);
+    border-color: rgb(205, 162, 51);
+    color: white;
+}
