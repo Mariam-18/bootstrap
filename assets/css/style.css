@@ -11,6 +11,9 @@ body {
   z-index: 1;
 }
 
+
+
+
 /* Alert */
 
 .alert-container .col-12{
@@ -23,16 +26,11 @@ body {
   margin-bottom: 0;
   padding:5px 15px;
 }
-/* 
+
 .alert-warning {
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: #ffeeba;
-} */
-.alert-warning {
-  color:#796836;
-  background-color: rgb(248, 204, 93);
-  border-color:  rgb(248, 204, 93);
+  color:white;
+  background-color: #f8876e;
+  border-color:  #f8876e;
 }
 /* Navbar */
 .navbar{
@@ -51,6 +49,7 @@ body {
 }
 
 /* Callout */
+
 
 /* Callout background */ 
 .callout-container {
@@ -78,14 +77,32 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
+/* Block Dividers */
 .block-divider {
   width: 75px;
   height: 5px;
   border: 0;
-  background-color: rgba(232, 183, 58);
-  margin-bottom: 10px;
 }
+
+.block-divider-short {
+  width: 35px;
+  margin-top: 8px;
+}
+
+.block-divider-gold{
+  background-color: rgba(232, 183, 58);
+}
+
+.block-divider-black{
+  background-color: rgba(0, 0,0, 0.75);
+}
+
+.block-divider-white{
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+
  /* Callout text */
 .jumbotron {
   background-color: rgb(233, 236, 239, 0.0);
@@ -129,5 +146,53 @@ body {
     background-color:rgb(205, 162, 51);
     border-color: rgb(205, 162, 51);
     color: white;
+}
+
+/*Quotes and Features */
+
+.section-header{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.content-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-wrapper {}
+
+.container-wrapper-gold {
+    background-color: rgb(205, 162, 51);
+    color: white;
+}
+
+/* Quotes*/
+.quote{
+  margin-bottom: 50px;
+}
+
+/* Features */
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature i {
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.feature .btn {
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(232, 183, 58);
 }
 
